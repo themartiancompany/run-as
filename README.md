@@ -28,7 +28,7 @@ Run applications as a given user.
 
 ## Installation
 
-The tools in this source repo
+The programs in this repository
 can be installed from source using GNU Make.
 
 ```bash
