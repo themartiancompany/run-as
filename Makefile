@@ -49,7 +49,7 @@ DOC_FILES=\
       *.md)
 
 _BASH_FILES=\
-  enable-graphical-services.sh
+  dbus-run.sh
 _PYTHON_FILES=\
   $(_PROJECT).py
 
@@ -123,13 +123,10 @@ install-man:
 	$(_INSTALL_DIR) \
 	  "$(MAN_DIR)/man1"
 	rst2man \
-	  "man/evm-contract-bytecode-get.1.rst" \
-	  "$(MAN_DIR)/man1/evm-contract-bytecode-get.1"
+	  "man/dbus-run.1.rst" \
+	  "$(MAN_DIR)/man1/dbus-run.1"
 	rst2man \
-	  "man/evm-contract-call.1.rst" \
-	  "$(MAN_DIR)/man1/evm-contract-call.1"
-	rst2man \
-	  "man/evm-contract-deployer-get.1.rst" \
-	  "$(MAN_DIR)/man1/evm-contract-deployer-get.1"
+	  "man/run-as.1.rst" \
+	  "$(MAN_DIR)/man1/run-as.1"
 
 .PHONY: $(_PHONY_TARGETS)
