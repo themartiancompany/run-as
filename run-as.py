@@ -102,7 +102,7 @@ def run_as(uid, command, command_args, X=False):
     if X:
         display = environ['DISPLAY']
         machinectl_cmd.append(f"--setenv=DISPLAY={display}")
-        call_cmd.append(which("enable-graphical-services"))
+        call_cmd.append(which("dbus-run"))
         xhost(uid)
 
     machinectl_cmd.append(".host")
