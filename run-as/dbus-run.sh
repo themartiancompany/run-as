@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: AGPL-3.0
 
 #    -----------------------------------------------------
+#    dbus-run
+#    -----------------------------------------------------
 #    Copyright © 2023, 2024, 2025, 2026
 #                Pellegrino Prevete
 #
@@ -31,6 +33,7 @@
 global_variables() {
   _msg=()
 }
+
 _systemctl="/usr/bin/systemctl"
 
 _restart_if_not_running() {
